@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silk Way Travel Georgia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --teal: #2EAFBD;
+      --dark: #020617;
+      --slate: #334155;
+    }
+
+    * {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .brand {
+      font-family: 'Sora', sans-serif;
+    }
+
+    /* Hero */
+    .hero-bg {
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.55) 0%, rgba(2, 6, 23, 0.3) 50%, rgba(2, 6, 23, 0.75) 100%),
+        url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1800&q=80') center/cover no-repeat;
+      min-height: 92vh;
+    }
+
+    .teal {
+      color: #2EAFBD;
+    }
+
+    .btn-teal {
+      background: #2EAFBD;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-teal:hover {
+      background: #269aaa;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      border-bottom: 3px solid #2EAFBD;
+      transition: transform 0.2s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .service-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 2rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+      background: #fff;
+    }
+
+    .service-card:hover {
+      box-shadow: 0 8px 32px rgba(46, 175, 189, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(46, 175, 189, 0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .partner-logo {
+      color: #334155;
+      font-family: 'Sora', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      opacity: 0.45;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .partner-logo:hover {
+      opacity: 1;
+    }
+
+    /* Marquee */
+    .marquee-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .marquee-wrapper::before,
+    .marquee-wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 120px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .marquee-wrapper::before {
+      left: 0;
+      background: linear-gradient(to right, #fff 0%, transparent 100%);
+    }
+
+    .marquee-wrapper::after {
+      right: 0;
+      background: linear-gradient(to left, #fff 0%, transparent 100%);
+    }
+
+    .marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      width: max-content;
+      animation: marquee-scroll 22s linear infinite;
+    }
+
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes marquee-scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .footer-bg {
+      background: #020617;
+    }
+
+    .nav-link {
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.875rem;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+      color: #2EAFBD;
+    }
+
+    .form-input {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      color: #1e293b;
+      padding: 0.75rem 1rem;
+      width: 100%;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus {
+      border-color: #2EAFBD;
+      box-shadow: 0 0 0 3px rgba(46, 175, 189, 0.1);
+    }
+
+    .form-input::placeholder {
+      color: #6B7280;
+    }
+
+    .form-select {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      color: #6B7280;
+      padding: 0.75rem 1rem;
+      width: 100%;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .form-select:focus {
+      border-color: #2EAFBD;
+      box-shadow: 0 0 0 3px rgba(46, 175, 189, 0.1);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(46, 175, 189, 0.15);
+      color: #2EAFBD;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 0.85rem;
+    }
+
+    .divider-line {
+      width: 40px;
+      height: 3px;
+      background: #2EAFBD;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      display: none;
+    }
+
+    #mobile-menu.open {
+      display: block;
+    }
+
+    /* Scroll animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Logo SVG approximation */
+    .logo-container svg {
+      width: 44px;
+      height: 44px;
+    }
+  </style>
+</head>
+
+<body class="bg-white overflow-x-hidden">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="img/logo_top.png" alt="Silk Way Travel Logo" class="h-10 md:h-12 w-auto object-contain rounded-xl">
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="nav-link">Our Services</a>
+          <a href="#partners" class="nav-link">Partners</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="tel:+995501558886" class="flex items-center gap-2 text-white text-sm font-medium">
+            <svg class="w-4 h-4 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            (+995) 501 55 88 86
+          </a>
+          <a href="#contact" class="btn-teal px-4 py-2 text-sm">Get In Touch</a>
+        </div>
+
+        <!-- Burger -->
+        <button id="burger" class="md:hidden text-white p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-[#020617] border-t border-white/10 px-4 py-4">
+      <div class="flex flex-col gap-4">
+        <a href="#services" class="nav-link">Our Services</a>
+        <a href="#partners" class="nav-link">Partners</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="tel:+995501558886" class="text-white text-sm">📞 (+995) 501 55 88 86</a>
+        <a href="#contact" class="btn-teal px-4 py-2 text-sm text-center">Get In Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg flex flex-col justify-center" id="home">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20">
+      <div class="max-w-2xl">
+        <div class="badge mb-4">✦ 20 Years of Aviation Excellence</div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+          Your Ticket to an<br />
+          <span class="teal" style="font-style:italic;">Unforgettable</span> Journey
+        </h1>
+        <p class="text-white/70 text-base sm:text-lg mb-8 max-w-lg leading-relaxed">
+          Two decades of proven excellence in global tourism and aviation representation. High-quality travel solutions
+          for the most discerning explorers.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="btn-teal px-6 py-3 flex items-center gap-2">
+            Contact Sales
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="#partners" class="btn-outline px-6 py-3">Explore Partners</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-0">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 -mb-20 relative z-10">
+        <div class="stat-card p-5 text-center">
+          <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">20+</div>
+          <div class="text-xs text-gray-500 mt-1">Years Experience</div>
+        </div>
+        <div class="stat-card p-5 text-center">
+          <div class="flex items-center justify-center gap-2 text-2xl font-bold text-[#334155]"
+            style="font-family:'Sora',sans-serif;">
+            <svg class="w-5 h-5 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+            </svg>
+            39
+          </div>
+          <div class="text-xs text-gray-500 mt-1">Weekly AZAL Flights</div>
+        </div>
+        <div class="stat-card p-5 text-center">
+          <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">IATA</div>
+          <div class="text-xs text-gray-500 mt-1">Accredited Member</div>
+        </div>
+        <div class="stat-card p-5 text-center">
+          <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">24/7</div>
+          <div class="text-xs text-gray-500 mt-1">Customer Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERSHIP -->
+  <section class="pt-36 pb-20 bg-white" id="partnership">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="fade-up">
+          <div class="badge">The Partnership</div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#020617] leading-tight mb-5"
+            style="font-family:'Sora',sans-serif;">
+            Official GSSA &<br />Aviation<br />Representative
+          </h2>
+          <p class="text-[#334155] leading-relaxed mb-8">
+            Silk Way Georgia is the trusted General Sales and Service Agent (GSSA) for premier global aviation groups.
+            We bridge the gap between airlines and the Georgian market with professional representation and operational
+            excellence.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <div
+              class="flex-1 border border-gray-200 rounded-xl p-4 flex items-center gap-3 hover:border-[#2EAFBD] transition-colors">
+              <div class="w-10 h-10 bg-[#2EAFBD]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold text-[#020617] text-sm">AZAL</div>
+                <div class="text-xs text-gray-500">Azerbaijan Airlines · National Flag Carrier</div>
+              </div>
+            </div>
+            <div
+              class="flex-1 border border-gray-200 rounded-xl p-4 flex items-center gap-3 hover:border-[#2EAFBD] transition-colors">
+              <div class="w-10 h-10 bg-[#2EAFBD]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold text-[#020617] text-sm">FLY KHIVA</div>
+                <div class="text-xs text-gray-500">Fly Khiva Group · Strategic Aviation Partner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up relative">
+          <div class="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Office"
+              class="w-full h-full object-cover" />
+          </div>
+          <!-- Floating badge -->
+          <div class="absolute bottom-6 left-6 bg-white rounded-xl shadow-xl p-4 max-w-[200px]">
+            <div class="text-xs text-gray-500 mb-1">Sales Leader for</div>
+            <div class="text-sm font-semibold text-[#020617]">Turkish Airlines, Lufthansa, LOT & Air France</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-20 bg-[#f8fafc]" id="services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 fade-up">
+        <div class="badge">Premier Travel Solutions</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#020617] mb-3" style="font-family:'Sora',sans-serif;">Expert
+          Services for Global Travelers</h2>
+        <p class="text-[#334155] max-w-xl mx-auto text-sm leading-relaxed">
+          Delivering seamless logistics and premium experiences through our multilingual support team in Georgian,
+          English, Russian, Turkish, and Azerbaijani.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 fade-up">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="w-6 h-6 text-[#2EAFBD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Bespoke Tours</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Customised itineraries designed for the most discerning
+            explorers, from hidden gems to luxury landmarks.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="w-6 h-6 text-[#2EAFBD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Corporate Travel & MICE
+          </h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Comprehensive event planning and corporate travel management
+            with efficiency and style.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="w-6 h-6 text-[#2EAFBD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Adventure & Extreme</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Curated experiences for those seeking the thrill of Georgia's
+            diverse and rugged landscapes.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="w-6 h-6 text-[#2EAFBD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Visa & Concierge</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Professional assistance for travel documentation and
+            personalised 24/7 concierge support.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="w-6 h-6 text-[#2EAFBD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Aviation Ticketing</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Access to global flight networks with specialised booking
+            systems and group rates.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="w-6 h-6 text-[#2EAFBD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Comprehensive Care</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Full-spectrum travel safety and logistics oversight for peace
+            of mind throughout your journey.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="py-16 bg-white" id="partners">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 fade-up">
+        <div class="badge">Trusted by Industry Leaders</div>
+      </div>
+      <div class="marquee-wrapper py-2 fade-up">
+        <div class="marquee-track">
+          <!-- First set -->
+          <span class="partner-logo">AZAL</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">TEGETA</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">ENTRÉE</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">SOCAR</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">PASHA Bank</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">SWISSOTEL</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">MERCURE</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="partner-logo">AZAL</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">TEGETA</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">ENTRÉE</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">SOCAR</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">PASHA Bank</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">SWISSOTEL</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+          <span class="partner-logo">MERCURE</span>
+          <span class="text-[#2EAFBD] text-xl">✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="py-0 relative" id="contact">
+    <div class="relative min-h-[520px]" style="background: linear-gradient(120deg, #020617 55%, #0f2240 100%);">
+      <!-- BG image left side -->
+      <div class="absolute inset-0 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?w=1200&q=60" alt=""
+          class="w-1/2 h-full object-cover opacity-20" />
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#020617]/70 to-[#020617]"></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <!-- Left -->
+          <div class="fade-up">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" style="font-family:'Sora',sans-serif;">
+              Ready to Explore<br /><span class="teal">Georgia?</span>
+            </h2>
+            <p class="text-white/60 text-sm leading-relaxed mb-8 max-w-sm">
+              Our dedicated team of travel experts and aviation professionals is standing by to assist with your
+              inquiries. Contact us today for a consultation.
+            </p>
+            <div class="flex flex-col gap-4 text-sm text-white/70">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#2EAFBD] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span><strong class="text-white">Headquarters</strong><br />28 Ilia Chavchavadze Av., 0179 Tbilisi,
+                  Georgia</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#2EAFBD] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                <span><strong class="text-white">Direct Lines</strong><br />(+995) 501 55 88 86 / 88<br />(+9932) 55 88
+                  88</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#2EAFBD] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <span><strong class="text-white">Email
+                    Correspondence</strong><br />book@swgeorgia.ge<br />info@swgeorgia.ge</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div class="fade-up bg-white rounded-2xl p-7 shadow-2xl">
+            <h3 class="text-[#020617] font-semibold text-lg mb-1" style="font-family:'Sora',sans-serif;">Inquire
+              Privately</h3>
+            <p class="text-[#94A3B8] text-xs mb-6">We'll respond within 24 hours</p>
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label class="text-xs font-medium text-[#94A3B8] block mb-1.5">Full Name</label>
+                <input type="text" placeholder="John Doe" class="form-input" />
+              </div>
+              <div>
+                <label class="text-xs font-medium text-[#94A3B8] block mb-1.5">Email Address</label>
+                <input type="email" placeholder="john@example.com" class="form-input" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="text-xs font-medium text-[#94A3B8] block mb-1.5">Interest</label>
+              <select class="form-select">
+                <option>Aviation GSSA Services</option>
+                <option>Bespoke Tours</option>
+                <option>Corporate Travel & MICE</option>
+                <option>Adventure & Extreme</option>
+                <option>Visa & Concierge</option>
+                <option>Aviation Ticketing</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <label class="text-xs font-medium text-[#94A3B8] block mb-1.5">Message</label>
+              <textarea placeholder="How can we assist you?" rows="4" class="form-input resize-none"></textarea>
+            </div>
+            <button class="btn-teal w-full py-3 text-sm tracking-wide uppercase">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER -->
+  <footer class="footer-bg pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <div class="mb-4">
+            <a href="index.html" class="flex items-center">
+              <img src="img/logo_top.png" alt="Silk Way Travel Logo"
+                class="h-10 md:h-12 w-auto object-contain rounded-xl">
+            </a>
+          </div>
+          <p class="text-white/40 text-sm leading-relaxed max-w-xs">
+            Your trusted partner for aviation representation and premium travel experiences across Georgia and beyond.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <div class="text-white font-sora font-semibold text-sm mb-4">Contact</div>
+          <div class="flex flex-col gap-2.5 text-sm text-white/45">
+            <span>28 Ilia Chavchavadze Av.</span>
+            <span>0179 Tbilisi, Georgia</span>
+            <a href="tel:+995501558886" class="hover:text-teal transition-colors">(+995) 501 55 88 86</a>
+            <a href="mailto:info@swgeorgia.ge" class="hover:text-teal transition-colors">info@swgeorgia.ge</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/25">
+        <span>© 2026 Silk Way Georgia. All rights reserved.</span>
+        <span>Developed by <span class="text-white/40 font-medium">Developers Alliance</span></span>
+        <span>IATA Accredited Member</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.style.background = 'rgba(2,6,23,0.97)';
+        navbar.style.backdropFilter = 'blur(12px)';
+        navbar.style.borderBottom = '1px solid rgba(255,255,255,0.07)';
+      } else {
+        navbar.style.background = 'transparent';
+        navbar.style.backdropFilter = 'none';
+        navbar.style.borderBottom = 'none';
+      }
+    });
+
+    // Mobile burger
+    document.getElementById('burger').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    // Fade-up on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('mobile-menu').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+
+</html>
