@@ -6,6 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Silk Way Travel Georgia</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://swgeorgia.ge/contact/#webpage",
+      "url": "https://swgeorgia.ge/contact/",
+      "name": "Contact Silk Way Georgia | Aviation & Travel Experts",
+      "description": "Get in touch with Silk Way Georgia for AZAL ticketing, bespoke tours, and MICE travel management. 24/7 multilingual support in Tbilisi."
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Silk Way Georgia",
+      "image": "https://swgeorgia.ge/contact-hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "28 Ilia Chavchavadze Av.",
+        "addressLocality": "Tbilisi",
+        "postalCode": "0179",
+        "addressCountry": "GE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.7101, 
+        "longitude": 44.7583
+      },
+      "telephone": "+995322558888",
+      "email": "info@swgeorgia.ge",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+995501558886",
+          "contactType": "Direct Line / Booking",
+          "availableLanguage": ["Georgian", "English", "Russian", "Turkish", "Azerbaijani"]
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "book@swgeorgia.ge",
+          "contactType": "Aviation Ticketing"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
@@ -161,7 +222,7 @@
           <a href="index.html#services" class="nav-link">Our Services</a>
           <a href="index.html#partners" class="nav-link">Partners</a>
           <a href="about.html" class="nav-link">About</a>
-          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </div>
 
         <div class="hidden md:flex items-center gap-4">
@@ -172,7 +233,7 @@
             </svg>
             (+995) 501 55 88 86
           </a>
-          <a href="index.html#contact" class="btn-teal px-4 py-2 text-sm">GET IN TOUCH</a>
+          <a href="contact.html" class="btn-teal px-4 py-2 text-sm">GET IN TOUCH</a>
         </div>
 
         <button id="burger" class="md:hidden text-[#334155] p-2 bg-transparent border-none cursor-pointer">
@@ -187,9 +248,9 @@
         <a href="index.html#services" class="nav-link">Our Services</a>
         <a href="index.html#partners" class="nav-link">Partners</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-link">Contact</a>
         <a href="tel:+995501558888" class="text-[#334155] text-sm">(+995) 501 55 88 88</a>
-        <a href="index.html#contact" class="btn-teal px-4 py-2 text-sm justify-center">Get In Touch</a>
+        <a href="contact.html" class="btn-teal px-4 py-2 text-sm justify-center">Get In Touch</a>
       </div>
     </div>
   </nav>
@@ -201,16 +262,16 @@
     <div class="hero-card flex flex-col justify-end p-8 sm:p-12 mb-12 fade-up">
       <div class="max-w-lg">
         <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
-          Experience Matters in Global Travel
+          Experience matters when navigating international travel.
         </h1>
         <p class="text-white/75 text-sm leading-relaxed mb-7">
           Since 2004, Silk Way Georgia has evolved from a local agency into a key regional player in the tourism and
-          aviation sectors. We manage logistics directly as an accredited IATA member and the Official GSSA for
-          Azerbaijan Airlines (AZAL).
+          aviation sectors. We manage logistics directly as an accredited <strong class="text-white">IATA
+            member</strong> and the <strong class="text-white">Official GSSA for Azerbaijan Airlines (AZAL)</strong>.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="index.html#services" class="btn-teal px-5 py-2.5 text-sm">Our Services</a>
-          <a href="index.html#contact"
+          <a href="contact.html"
             class="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white border border-white/40 rounded-md hover:bg-white/10 transition-colors">
             Get in Touch
           </a>
@@ -220,7 +281,7 @@
 
     <!-- STRATEGIC INDUSTRY STANDING -->
     <section class="mb-12 fade-up">
-      <h2 class="text-xl sm:text-2xl font-bold text-[#020617] mb-6">Strategic Industry Standing</h2>
+      <h2 class="text-xl sm:text-2xl font-bold text-[#020617] mb-6">Industry Standing</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
         <div class="strat-card">
@@ -231,8 +292,8 @@
           </div>
           <h3 class="font-semibold text-[#020617] text-sm mb-2">Aviation Authority</h3>
           <p class="text-xs text-gray-500 leading-relaxed">
-            Official representative for Fly Khiva Group (Uzbekistan Airlines), managing 44 weekly flights across Tbilisi
-            and Batumi.
+            We serve as the official representative for <strong class="text-[#334155]">Fly Khiva Group (Uzbekistan
+              Airlines)</strong> and manage 44 weekly flights across Tbilisi and Batumi.
           </p>
         </div>
 
@@ -245,7 +306,9 @@
           </div>
           <h3 class="font-semibold text-[#020617] text-sm mb-2">Institutional Standards</h3>
           <p class="text-xs text-gray-500 leading-relaxed">
-            Proud membership in GNTA, European Business Association (EBA), and Georgian Tourism Association (GTA).
+            Our services align with international best practices through active membership in the <strong
+              class="text-[#334155]">GNTA</strong>, <strong class="text-[#334155]">European Business Association
+              (EBA)</strong>, and <strong class="text-[#334155]">Georgian Tourism Association (GTA)</strong>.
           </p>
         </div>
 
@@ -258,7 +321,9 @@
           </div>
           <h3 class="font-semibold text-[#020617] text-sm mb-2">Cross-Border Expertise</h3>
           <p class="text-xs text-gray-500 leading-relaxed">
-            Strategic ties with Azerbaijani Business Association (AZEBI) and GURTIAD for seamless regional logistics.
+            We maintain strong ties with the <strong class="text-[#334155]">Azerbaijani Business Association
+              (AZEBI)</strong> and the <strong class="text-[#334155]">Georgian and Turkish Businessmen Association
+              (GURTIAD)</strong>.
           </p>
         </div>
 
@@ -272,7 +337,9 @@
           </div>
           <h3 class="font-semibold text-[#020617] text-sm mb-2">Global Outreach</h3>
           <p class="text-xs text-gray-500 leading-relaxed">
-            Actively representing Georgian tourism at ITB Berlin, ITB China, and New York Travel markets.
+            We represent Georgian tourism interests at major international forums, including <strong
+              class="text-[#334155]">ITB Berlin</strong>, <strong class="text-[#334155]">ITB China</strong>, and <strong
+              class="text-[#334155]">New York Travel</strong>.
           </p>
         </div>
 
@@ -287,8 +354,7 @@
         <div>
           <h2 class="text-xl sm:text-2xl font-bold text-[#020617] mb-3">Comprehensive Travel Management</h2>
           <p class="text-sm text-[#334155] leading-relaxed mb-8">
-            We provide end-to-end solutions for corporate and leisure travel, ensuring every detail is managed with
-            professional precision.
+            We provide the full infrastructure required for both corporate and leisure travel:
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -303,8 +369,8 @@
               </div>
               <div>
                 <div class="text-sm font-semibold text-[#020617] mb-1">Direct Logistics</div>
-                <p class="text-xs text-gray-500 leading-relaxed">Exclusive pricing for flight tickets, premium hotel
-                  bookings, and airport transfers.</p>
+                <p class="text-xs text-gray-500 leading-relaxed">We secure airplane tickets, hotel bookings, and
+                  transfers using exclusive industry pricing.</p>
               </div>
             </div>
 
@@ -318,8 +384,8 @@
               </div>
               <div>
                 <div class="text-sm font-semibold text-[#020617] mb-1">Specialized Itineraries</div>
-                <p class="text-xs text-gray-500 leading-relaxed">Curated gastronomy, cultural heritage, and adventure
-                  tours across Georgia.</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Our team curates gastronomy, culture, and adventure
+                  tours tailored to specific group or individual needs.</p>
               </div>
             </div>
 
@@ -333,8 +399,8 @@
               </div>
               <div>
                 <div class="text-sm font-semibold text-[#020617] mb-1">Administrative Support</div>
-                <p class="text-xs text-gray-500 leading-relaxed">Full-service visa support and comprehensive travel
-                  insurance for peace of mind.</p>
+                <p class="text-xs text-gray-500 leading-relaxed">We handle the technical details of travel, including
+                  visa support and travel insurance.</p>
               </div>
             </div>
 
@@ -348,8 +414,8 @@
               </div>
               <div>
                 <div class="text-sm font-semibold text-[#020617] mb-1">Local Accessibility</div>
-                <p class="text-xs text-gray-500 leading-relaxed">24/7 support from our offices in Tbilisi Airport, Vake
-                  district, and Batumi.</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Our certified operators provide 24/7 support from our
+                  Tbilisi Airport office, with additional branches in Vake and Batumi.</p>
               </div>
             </div>
 
@@ -376,8 +442,8 @@
       <div class="cta-bg px-8 py-14 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Ready to Start Your Journey?</h2>
         <p class="text-white/55 text-sm max-w-md mx-auto mb-10 leading-relaxed">
-          Connect with our multilingual team (Georgian, English, Russian, Turkish, Azerbaijani) for professional
-          assistance and exclusive travel offers.
+          Connect with our multilingual team: Our operators are fluent in Georgian, English, Russian, Turkish, and
+          Azerbaijani.
         </p>
 
         <!-- Contact info row -->
@@ -418,7 +484,7 @@
 
         </div>
 
-        <a href="index.html#contact" class="btn-teal px-8 py-3 text-sm justify-center inline-flex">
+        <a href="contact.html" class="btn-teal px-8 py-3 text-sm justify-center inline-flex">
           Contact Our Team
         </a>
       </div>
@@ -451,7 +517,7 @@
             <span>28 Ilia Chavchavadze Av.</span>
             <span>0179 Tbilisi, Georgia</span>
             <a href="tel:+995501558886" class="hover:text-teal transition-colors">(+995) 501 55 88 86</a>
-            <a href="mailto:info@swgeorgia.ge" class="hover:text-teal transition-colors">info@swgeorgia.ge</a>
+            <a href="mailto:book@swgeorgia.ge" class="hover:text-teal transition-colors">book&#64;swgeorgia.ge</a>
           </div>
         </div>
 
@@ -467,6 +533,7 @@
     </div>
   </footer>
 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script>
     // Navbar — reste blanc sur cette page
     const navbar = document.getElementById('navbar');
@@ -487,7 +554,6 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   </script>
-
 </body>
 
 </html>

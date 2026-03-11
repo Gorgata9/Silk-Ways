@@ -3,9 +3,80 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="description"
+    content="Silk Way Georgia: IATA-accredited travel agency & official GSSA for AZAL and Fly Khiva. Specialized in bespoke tours, MICE, and premium aviation ticketing in Tbilisi.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Silk Way Travel Georgia</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://swgeorgia.ge/#organization",
+      "name": "Silk Way Georgia",
+      "url": "https://swgeorgia.ge",
+      "logo": "https://swgeorgia.ge/logo.png",
+      "image": "https://swgeorgia.ge/hero-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "28 Ilia Chavchavadze Av.",
+        "addressLocality": "Tbilisi",
+        "postalCode": "0179",
+        "addressCountry": "GE"
+      },
+      "telephone": "+995501558886",
+      "priceRange": "$$$",
+      "hasCertification": "IATA Accredited",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+995322558888",
+        "contactType": "customer service",
+        "availableLanguage": ["Georgian", "English", "Russian", "Turkish", "Azerbaijani"]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Silk Way Georgia an official representative for Azerbaijan Airlines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Silk Way Georgia is the official GSSA (General Sales & Service Agent) for Azerbaijan Airlines (AZAL) and Fly Khiva Group, providing exclusive aviation ticketing value and direct representation in Georgia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does your travel agency provide multilingual support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our certified operators provide 24/7 concierge care and professional travel solutions in Georgian, English, Russian, Turkish, and Azerbaijani."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer MICE and corporate travel management in Tbilisi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We manage comprehensive MICE logistics for international organizations, including event coordination, bespoke itineraries, and exclusive corporate pricing across Georgia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Silk Way Georgia IATA accredited?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we are a fully IATA-accredited member with over 20 years of proven excellence in global tourism and aviation representation."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
@@ -284,7 +355,7 @@
           <a href="#services" class="nav-link">Our Services</a>
           <a href="#partners" class="nav-link">Partners</a>
           <a href="about.html" class="nav-link">About</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </div>
 
         <!-- CTA -->
@@ -315,7 +386,7 @@
         <a href="about.html" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
         <a href="tel:+995501558886" class="text-white text-sm">📞 (+995) 501 55 88 86</a>
-        <a href="#contact" class="btn-teal px-4 py-2 text-sm text-center">Get In Touch</a>
+        <a href="contact.html" class="btn-teal px-4 py-2 text-sm text-center">Get In Touch</a>
       </div>
     </div>
   </nav>
@@ -326,54 +397,56 @@
       <div class="max-w-2xl">
         <div class="badge mb-4">✦ 20 Years of Aviation Excellence</div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-          Your Ticket to an<br />
-          <span class="teal" style="font-style:italic;">Unforgettable</span> Journey
+          Your Travel Agency in Tbilisi for an<br />
+          <span class="teal" style="font-style:italic;">Unforgettable</span> Journey Across the Silk Road.
         </h1>
         <p class="text-white/70 text-base sm:text-lg mb-8 max-w-lg leading-relaxed">
-          Two decades of proven excellence in global tourism and aviation representation. High-quality travel solutions
-          for the most discerning explorers.
+          20+ years experience &nbsp;·&nbsp; 39 weekly AZAL flights &nbsp;·&nbsp; IATA accredited member &nbsp;·&nbsp;
+          24/7 customer support
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="btn-teal px-6 py-3 flex items-center gap-2">
-            Contact Sales
+          <a href="#services" class="btn-teal px-6 py-3 flex items-center gap-2">
+            Our Services
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-          <a href="#partners" class="btn-outline px-6 py-3">Explore Partners</a>
+          <a href="#contact" class="btn-outline px-6 py-3">Contact Expert</a>
         </div>
       </div>
     </div>
 
-    <!-- Stats bar -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-0">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 -mb-20 relative z-10">
-        <div class="stat-card p-5 text-center">
-          <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">20+</div>
-          <div class="text-xs text-gray-500 mt-1">Years Experience</div>
+  </section>
+
+  <!-- STATS BRIDGE — à cheval entre hero et partnership -->
+  <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="margin-top:-44px; margin-bottom:-44px;">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="stat-card p-5 text-center">
+        <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">20+</div>
+        <div class="text-xs text-gray-500 mt-1">Years Experience</div>
+      </div>
+      <div class="stat-card p-5 text-center">
+        <div class="flex items-center justify-center gap-2 text-2xl font-bold text-[#334155]"
+          style="font-family:'Sora',sans-serif;">
+          <svg class="w-5 h-5 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+          </svg>
+          39
         </div>
-        <div class="stat-card p-5 text-center">
-          <div class="flex items-center justify-center gap-2 text-2xl font-bold text-[#334155]"
-            style="font-family:'Sora',sans-serif;">
-            <svg class="w-5 h-5 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-            </svg>
-            39
-          </div>
-          <div class="text-xs text-gray-500 mt-1">Weekly AZAL Flights</div>
-        </div>
-        <div class="stat-card p-5 text-center">
-          <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">IATA</div>
-          <div class="text-xs text-gray-500 mt-1">Accredited Member</div>
-        </div>
-        <div class="stat-card p-5 text-center">
-          <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">24/7</div>
-          <div class="text-xs text-gray-500 mt-1">Customer Support</div>
-        </div>
+        <div class="text-xs text-gray-500 mt-1">Weekly AZAL Flights</div>
+      </div>
+      <div class="stat-card p-5 text-center">
+        <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">IATA</div>
+        <div class="text-xs text-gray-500 mt-1">Accredited Member</div>
+      </div>
+      <div class="stat-card p-5 text-center">
+        <div class="text-2xl font-bold text-[#334155]" style="font-family:'Sora',sans-serif;">24/7</div>
+        <div class="text-xs text-gray-500 mt-1">Customer Support</div>
       </div>
     </div>
-  </section>
+  </div>
+
 
   <!-- PARTNERSHIP -->
   <section class="pt-36 pb-20 bg-white" id="partnership">
@@ -383,12 +456,12 @@
           <div class="badge">The Partnership</div>
           <h2 class="text-3xl sm:text-4xl font-bold text-[#020617] leading-tight mb-5"
             style="font-family:'Sora',sans-serif;">
-            Official GSSA &<br />Aviation<br />Representative
+            Azerbaijan Airlines GSSA Georgia
           </h2>
           <p class="text-[#334155] leading-relaxed mb-8">
-            Silk Way Georgia is the trusted General Sales and Service Agent (GSSA) for premier global aviation groups.
-            We bridge the gap between airlines and the Georgian market with professional representation and operational
-            excellence.
+            As the official <strong>Azerbaijan Airlines GSSA in Georgia</strong> and <strong>Fly Khiva Georgia
+              Representative</strong>, we provide exclusive aviation ticketing services in Tbilisi that other agencies
+            can't match.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <div
@@ -401,7 +474,7 @@
               </div>
               <div>
                 <div class="font-semibold text-[#020617] text-sm">AZAL</div>
-                <div class="text-xs text-gray-500">Azerbaijan Airlines · National Flag Carrier</div>
+                <div class="text-xs text-gray-500">GSSA of Azerbaijan Airlines (AZAL)</div>
               </div>
             </div>
             <div
@@ -414,7 +487,7 @@
               </div>
               <div>
                 <div class="font-semibold text-[#020617] text-sm">FLY KHIVA</div>
-                <div class="text-xs text-gray-500">Fly Khiva Group · Strategic Aviation Partner</div>
+                <div class="text-xs text-gray-500">Official Representative of FLY KHIVA GROUP (Uzbekistan)</div>
               </div>
             </div>
           </div>
@@ -424,10 +497,9 @@
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Office"
               class="w-full h-full object-cover" />
           </div>
-          <!-- Floating badge -->
           <div class="absolute bottom-6 left-6 bg-white rounded-xl shadow-xl p-4 max-w-[200px]">
             <div class="text-xs text-gray-500 mb-1">Sales Leader for</div>
-            <div class="text-sm font-semibold text-[#020617]">Turkish Airlines, Lufthansa, LOT & Air France</div>
+            <div class="text-sm font-semibold text-[#020617]">Turkish Airlines, Lufthansa, LOT, and Air France</div>
           </div>
         </div>
       </div>
@@ -439,11 +511,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14 fade-up">
         <div class="badge">Premier Travel Solutions</div>
-        <h2 class="text-3xl sm:text-4xl font-bold text-[#020617] mb-3" style="font-family:'Sora',sans-serif;">Expert
-          Services for Global Travelers</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#020617] mb-3" style="font-family:'Sora',sans-serif;">
+          Comprehensive solutions for the modern traveler</h2>
         <p class="text-[#334155] max-w-xl mx-auto text-sm leading-relaxed">
-          Delivering seamless logistics and premium experiences through our multilingual support team in Georgian,
-          English, Russian, Turkish, and Azerbaijani.
+          Managed by IATA-certified and highly trained operators that speak your language (Georgian, English, Russian,
+          Turkish and Azerbaijani).
         </p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 fade-up">
@@ -455,9 +527,13 @@
                 d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
             </svg>
           </div>
-          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Bespoke Tours</h3>
-          <p class="text-sm text-gray-500 leading-relaxed">Customised itineraries designed for the most discerning
-            explorers, from hidden gems to luxury landmarks.</p>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Bespoke Georgia
+            Itineraries &amp; Cultural Tours</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Experience the pinnacle of personalization with our
+            <strong>bespoke Georgia itineraries</strong>. As a premier Silk Road tour operator, we craft custom journeys
+            that highlight ancient cultural heritage, hidden architectural gems, and award-winning gastronomy tours
+            through the Kakheti wine region.
+          </p>
         </div>
 
         <div class="service-card">
@@ -467,10 +543,12 @@
                 d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Corporate Travel & MICE
-          </h3>
-          <p class="text-sm text-gray-500 leading-relaxed">Comprehensive event planning and corporate travel management
-            with efficiency and style.</p>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Corporate Travel &amp;
+            MICE Management</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">We specialize in <strong>Corporate Travel and MICE
+              Georgia</strong> (Meetings, Incentives, Conferences, and Exhibitions). Managing logistics for
+            international organizations, we provide exclusive corporate pricing, seamless event coordination, and VIP
+            transport across the Caucasus.</p>
         </div>
 
         <div class="service-card">
@@ -480,9 +558,12 @@
                 d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
             </svg>
           </div>
-          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Adventure & Extreme</h3>
-          <p class="text-sm text-gray-500 leading-relaxed">Curated experiences for those seeking the thrill of Georgia's
-            diverse and rugged landscapes.</p>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Georgia Adventure Tour
+            Packages</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">From the peaks of Svaneti to the caves of Vardzia, our
+            <strong>Georgia adventure tour packages</strong> offer high-altitude experiences for the daring traveler. We
+            manage all technical logistics for extreme expeditions, ensuring safety and luxury in the heart of nature.
+          </p>
         </div>
 
         <div class="service-card">
@@ -492,9 +573,11 @@
                 d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
             </svg>
           </div>
-          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Visa & Concierge</h3>
-          <p class="text-sm text-gray-500 leading-relaxed">Professional assistance for travel documentation and
-            personalised 24/7 concierge support.</p>
+          <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Multilingual Concierge
+            &amp; Visa Support</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Our <strong>multilingual concierge travel in Georgia</strong>
+            provides 24/7 care for global visitors. As an IATA accredited travel agent in Georgia, we offer professional
+            assistance with accredited visa support, luxury layover management, and localized expert advice.</p>
         </div>
 
         <div class="service-card">
@@ -505,8 +588,10 @@
             </svg>
           </div>
           <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Aviation Ticketing</h3>
-          <p class="text-sm text-gray-500 leading-relaxed">Access to global flight networks with specialised booking
-            systems and group rates.</p>
+          <p class="text-sm text-gray-500 leading-relaxed">Utilizing our status as an official GSSA, we offer direct
+            <strong>aviation ticketing services in Tbilisi</strong> with exclusive pricing. Get first-priority access to
+            flights from Azerbaijan Airlines (AZAL), Fly Khiva, and our global partners like Lufthansa and Air France.
+          </p>
         </div>
 
         <div class="service-card">
@@ -517,8 +602,11 @@
             </svg>
           </div>
           <h3 class="font-semibold text-[#020617] mb-2" style="font-family:'Sora',sans-serif;">Comprehensive Care</h3>
-          <p class="text-sm text-gray-500 leading-relaxed">Full-spectrum travel safety and logistics oversight for peace
-            of mind throughout your journey.</p>
+          <p class="text-sm text-gray-500 leading-relaxed">Our commitment to excellence includes premium travel
+            insurance, sophisticated layover management, and round-the-clock support. We ensure every expert-led
+            <strong>Silk Road journey</strong> is backed by the security and professionalism of a twenty-year industry
+            leader.
+          </p>
         </div>
 
       </div>
@@ -529,7 +617,7 @@
   <section class="py-16 bg-white" id="partners">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10 fade-up">
-        <div class="badge">Trusted by Industry Leaders</div>
+        <div class="badge">Our Trusted Partners</div>
       </div>
       <div class="marquee-wrapper py-2 fade-up">
         <div class="marquee-track">
@@ -580,14 +668,14 @@
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="grid lg:grid-cols-2 gap-16 items-start">
-          <!-- Left -->
           <div class="fade-up">
             <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" style="font-family:'Sora',sans-serif;">
               Ready to Explore<br /><span class="teal">Georgia?</span>
             </h2>
             <p class="text-white/60 text-sm leading-relaxed mb-8 max-w-sm">
-              Our dedicated team of travel experts and aviation professionals is standing by to assist with your
-              inquiries. Contact us today for a consultation.
+              Visit our headquarters in the heart of the city to see why we are ranked among the best <strong
+                class="text-white">silk road tour operators</strong> for international travelers.<br /><br />We speak
+              English, Georgian, Russian, Turkish, and Azerbaijani.
             </p>
             <div class="flex flex-col gap-4 text-sm text-white/70">
               <div class="flex items-start gap-3">
@@ -604,7 +692,7 @@
                   <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <span><strong class="text-white">Direct Lines</strong><br />(+995) 501 55 88 86 / 88<br />(+9932) 55 88
+                <span><strong class="text-white">Direct Line</strong><br />(+995) 501 55 88 86 / 88<br />(0322) 55 88
                   88</span>
               </div>
               <div class="flex items-start gap-3">
@@ -612,8 +700,8 @@
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <span><strong class="text-white">Email
-                    Correspondence</strong><br />book@swgeorgia.ge<br />info@swgeorgia.ge</span>
+                <span><strong
+                    class="text-white">Email</strong><br />book&#64;swgeorgia.ge<br />info&#64;swgeorgia.ge</span>
               </div>
             </div>
           </div>
@@ -651,6 +739,105 @@
             <button class="btn-teal w-full py-3 text-sm tracking-wide uppercase">Send Message</button>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-white" id="faq">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-up">
+        <div class="badge">FAQ</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#020617] mb-3" style="font-family:'Sora',sans-serif;">Frequently
+          Asked Questions</h2>
+        <p class="text-[#334155] text-sm leading-relaxed">Everything you need to know about Silk Way Georgia's services.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 fade-up" id="faq-list">
+
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors">
+            <span class="font-semibold text-[#020617] text-sm pr-4" style="font-family:'Sora',sans-serif;">Is Silk Way
+              Georgia an official representative for Azerbaijan Airlines?</span>
+            <svg class="faq-icon w-5 h-5 text-[#2EAFBD] flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5">
+            <p class="text-sm text-gray-500 leading-relaxed">Yes, Silk Way Georgia is the official <strong>GSSA (General
+                Sales &amp; Service Agent)</strong> for Azerbaijan Airlines (AZAL) and Fly Khiva Group, offering
+              exclusive ticketing value and direct support.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors">
+            <span class="font-semibold text-[#020617] text-sm pr-4" style="font-family:'Sora',sans-serif;">Does your
+              travel agency provide multilingual support?</span>
+            <svg class="faq-icon w-5 h-5 text-[#2EAFBD] flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5">
+            <p class="text-sm text-gray-500 leading-relaxed">Our certified operators provide <strong>24/7 concierge
+                care</strong> in Georgian, English, Russian, Turkish, and Azerbaijani.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors">
+            <span class="font-semibold text-[#020617] text-sm pr-4" style="font-family:'Sora',sans-serif;">Do you offer
+              MICE and corporate travel management in Tbilisi?</span>
+            <svg class="faq-icon w-5 h-5 text-[#2EAFBD] flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5">
+            <p class="text-sm text-gray-500 leading-relaxed">Absolutely. We manage comprehensive <strong>MICE
+                logistics</strong> for international organizations, including event coordination and exclusive corporate
+              pricing across Georgia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors">
+            <span class="font-semibold text-[#020617] text-sm pr-4" style="font-family:'Sora',sans-serif;">Is Silk Way
+              Georgia IATA accredited?</span>
+            <svg class="faq-icon w-5 h-5 text-[#2EAFBD] flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5">
+            <p class="text-sm text-gray-500 leading-relaxed">Yes, we are a fully <strong>IATA-accredited member</strong>
+              with over 20 years of proven excellence in global tourism and aviation representation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors">
+            <span class="font-semibold text-[#020617] text-sm pr-4" style="font-family:'Sora',sans-serif;">How can I get
+              a custom quote for a corporate event?</span>
+            <svg class="faq-icon w-5 h-5 text-[#2EAFBD] flex-shrink-0 transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5">
+            <p class="text-sm text-gray-500 leading-relaxed">Simply scroll down to our contact section or call our
+              direct line at <strong>(+995) 501 55 88 86</strong>. Our consultants are available 24/7 to design your
+              professional itinerary.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -696,6 +883,7 @@
     </div>
   </footer>
 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script>
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
@@ -727,15 +915,22 @@
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-    // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-        document.getElementById('mobile-menu').classList.remove('open');
-      });
-    });
+    // FAQ accordion
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = !answer.classList.contains('hidden');
+
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+      document.querySelectorAll('.faq-item').forEach(item => item.style.borderColor = '#e5e7eb');
+
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+        btn.closest('.faq-item').style.borderColor = '#2EAFBD';
+      }
+    }
   </script>
 </body>
 
