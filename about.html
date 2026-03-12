@@ -108,12 +108,20 @@
       transform: translateY(-1px);
     }
 
+    .btn-dark {
+      background: rgba(2, 6, 23, 0.97);
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+    }
+
     .footer-bg {
       background: #020617;
     }
 
     .nav-link {
-      color: #334155;
+      color: #ffffff;
       font-weight: 500;
       font-size: 0.875rem;
       letter-spacing: 0.04em;
@@ -122,12 +130,12 @@
     }
 
     .nav-link:hover {
-      color: #2EAFBD;
+      color: rgba(255,255,255,0.70);
     }
 
     /* Navbar scrolled */
     #navbar {
-      background: #fff;
+      background: rgba(46, 175, 189, 1);
       border-bottom: 1px solid #e2e8f0;
     }
 
@@ -226,14 +234,14 @@
         </div>
 
         <div class="hidden md:flex items-center gap-4">
-          <a href="tel:+995501558888" class="flex items-center gap-2 text-[#334155] text-sm font-medium">
-            <svg class="w-4 h-4 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+          <a href="tel:+995501558888" class="flex items-center gap-2 text-white text-sm font-medium">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
             (+995) 501 55 88 86
           </a>
-          <a href="contact.html" class="btn-teal px-4 py-2 text-sm">GET IN TOUCH</a>
+          <a href="contact.html" class="btn-dark px-4 py-2 text-sm">GET IN TOUCH</a>
         </div>
 
         <button id="burger" class="md:hidden text-[#334155] p-2 bg-transparent border-none cursor-pointer">
@@ -243,14 +251,14 @@
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 px-4 py-4">
+    <div id="mobile-menu" class="md:hidden bg-[#2EAFBD] border-t border-gray-100 px-4 py-4">
       <div class="flex flex-col gap-4">
         <a href="index.html#services" class="nav-link">Our Services</a>
         <a href="index.html#partners" class="nav-link">Partners</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        <a href="tel:+995501558888" class="text-[#334155] text-sm">(+995) 501 55 88 88</a>
-        <a href="contact.html" class="btn-teal px-4 py-2 text-sm justify-center">Get In Touch</a>
+        <a href="tel:+995501558886" class="text-white text-sm">📞 (+995) 501 55 88 86</a>
+        <a href="contact.html" class="btn-dark px-4 py-2 text-sm text-center">Get In Touch</a>
       </div>
     </div>
   </nav>
@@ -505,30 +513,32 @@
                 class="h-10 md:h-12 w-auto object-contain rounded-xl">
             </a>
           </div>
-          <p class="text-white/40 text-sm leading-relaxed max-w-xs">
+          <p class="text-[#94A3B8] text-sm leading-relaxed max-w-xs">
             Your trusted partner for aviation representation and premium travel experiences across Georgia and beyond.
           </p>
         </div>
 
         <!-- Contact -->
         <div>
-          <div class="text-white font-sora font-semibold text-sm mb-4">Contact</div>
-          <div class="flex flex-col gap-2.5 text-sm text-white/45">
-            <span>28 Ilia Chavchavadze Av.</span>
-            <span>0179 Tbilisi, Georgia</span>
-            <a href="tel:+995501558886" class="hover:text-teal transition-colors">(+995) 501 55 88 86</a>
-            <a href="mailto:book@swgeorgia.ge" class="hover:text-teal transition-colors">book&#64;swgeorgia.ge</a>
+          <div class="text-white font-semibold text-sm mb-4 tracking-wide">Contact</div>
+          <div class="flex flex-col gap-2.5 text-sm">
+            <span class="text-[#94A3B8]">28 Ilia Chavchavadze Av.</span>
+            <span class="text-[#94A3B8]">0179 Tbilisi, Georgia</span>
+            <a href="tel:+995501558886" class="text-[#2EAFBD] hover:text-white transition-colors">(+995) 501 55 88
+              86</a>
+            <a href="mailto:info@swgeorgia.ge"
+              class="text-[#2EAFBD] hover:text-white transition-colors">info&#64;swgeorgia.ge</a>
           </div>
         </div>
 
       </div>
 
       <!-- Bottom bar -->
-      <div
-        class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/25">
-        <span>© 2026 Silk Way Georgia. All rights reserved.</span>
-        <span>Developed by <span class="text-white/40 font-medium">Developers Alliance</span></span>
-        <span>IATA Accredited Member</span>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+        <span class="text-[#475569]">© 2026 Silk Way Georgia. All rights reserved.</span>
+        <span class="text-[#475569]">Developed by <span class="text-[#64748B] font-medium">Developers
+            Alliance</span></span>
+        <span class="text-[#2EAFBD]">IATA Accredited Member</span>
       </div>
     </div>
   </footer>

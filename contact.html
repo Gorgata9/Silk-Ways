@@ -37,12 +37,20 @@
       transform: translateY(-1px);
     }
 
+    .btn-dark {
+      background: rgba(2, 6, 23, 0.97);
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+    }
+
     .footer-bg {
       background: #020617;
     }
 
     .nav-link {
-      color: #334155;
+      color: #ffffff;
       font-weight: 500;
       font-size: 0.875rem;
       letter-spacing: 0.04em;
@@ -51,11 +59,11 @@
     }
 
     .nav-link:hover {
-      color: #2EAFBD;
+      color: rgba(255,255,255,0.70);
     }
 
     #navbar {
-      background: #fff;
+      background: #2EAFBD;
       border-bottom: 1px solid #e2e8f0;
     }
 
@@ -187,14 +195,14 @@
 
         <!-- CTA -->
         <div class="hidden md:flex items-center gap-4">
-          <a href="tel:+995501558888" class="flex items-center gap-2 text-[#334155] text-sm font-medium">
-            <svg class="w-4 h-4 text-[#2EAFBD]" fill="currentColor" viewBox="0 0 20 20">
+          <a href="tel:+995501558888" class="flex items-center gap-2 text-white text-sm font-medium">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
             (+995) 501 55 88 86
           </a>
-          <a href="contact.html" class="btn-teal px-4 py-2 text-sm">GET IN TOUCH</a>
+          <a href="contact.html" class="btn-dark px-4 py-2 text-sm">GET IN TOUCH</a>
         </div>
 
         <!-- Burger -->
@@ -206,14 +214,14 @@
       </div>
     </div>
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="md:hidden bg-[#020617] border-t border-white/10 px-4 py-4">
+    <div id="mobile-menu" class="md:hidden bg-[#2EAFBD] border-t border-white/10 px-4 py-4">
       <div class="flex flex-col gap-4">
         <a href="index.html#services" class="nav-link">Our Services</a>
         <a href="index.html#partners" class="nav-link">Partners</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="tel:+995501558886" class="text-white text-sm">📞 (+995) 501 55 88 86</a>
-        <a href="contact.html" class="btn-teal px-4 py-2 text-sm text-center">Get In Touch</a>
+        <a href="contact.html" class="btn-dark px-4 py-2 text-sm text-center">Get In Touch</a>
       </div>
     </div>
   </nav>
